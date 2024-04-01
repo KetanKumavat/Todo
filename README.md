@@ -30,7 +30,7 @@ This is a simple To-Do application built using ReactJS, Framer Motion, and Redux
 1. Clone the repository:
    
    ```bash
-   git clone https://github.com/ketankumavat/todo.git
+   git clone https://github.com/KetanKumavat/Todo.git
 2. Install dependencies:
    
     ```bash
