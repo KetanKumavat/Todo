@@ -30,18 +30,21 @@ const DisplayTodos = (props) => {
     <div className="displaytodos">
       <div className="buttons">
         <motion.button
+          className={sort === "active" ? "active" : ""}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setSort("active")}>
           Active
         </motion.button>
         <motion.button
+          className={sort === "completed" ? "active" : ""}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setSort("completed")}>
           Completed
         </motion.button>
         <motion.button
+          className={sort === "all" ? "active" : ""}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setSort("all")}>
@@ -98,5 +101,6 @@ const DisplayTodos = (props) => {
     </div>
   );
 };
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(DisplayTodos);

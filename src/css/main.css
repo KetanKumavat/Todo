@@ -143,6 +143,11 @@ body {
   margin-left: 5%;
 }
 
+.displaytodos .buttons button.active {
+  background-color: #271c6c;
+  color: white;
+}
+
 .card {
   display: flex;
   flex-direction: column;
